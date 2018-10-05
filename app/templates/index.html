@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} </title>
+        {% else %}
+        <title>Welcome to the news highlight website </title>
+        {% endif %}
+    </head>
+    <body>
+        <!-- trending news section  -->
+        <h3> Trending News </h3>
+        <ul>
+            {% for trending_news in sources %}
+            <li>{{trending_news.title}} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
