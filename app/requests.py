@@ -6,6 +6,7 @@ api_key = None
 
 #getting the news base url
 base_url =None
+article_base_url = None
 
 def configure_request(app) :
     global api_key,base_url,article_base_url
@@ -58,7 +59,7 @@ def get_articles(id):
     """
     function that gets json response to our url request
     """
-    get_articles_url = base_url.format(id,api_key)
+    get_articles_url = article_base_url.format(id,api_key)
 
     with urllib.request.urlopen(get_articles_url) as url :
 
@@ -67,8 +68,8 @@ def get_articles(id):
 
         articles_results = None
 
-        if get_news_response['top_heading'] :
-            articles_results_list = get_articles_response['top_heading']
+        if get_news_response['articles'] :
+            articles_results_list = get_articles_response['articles']
             articles_results = process_results(articles_results_list)
 
     return articles_results

@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% block content %}
 
-<head>
-    {% if title %}
-    <title>{{ news }} </title>
-    {% else %}
-    <title>Welcome to the news highlight website </title>
-    {% endif %}
-</head>
+  <div class="row">
+    {{macro.displayArticlesList(articles)}}
+  </div>
 
-<body>
-
-</body>
-
-</html>
+{% endblock%}
