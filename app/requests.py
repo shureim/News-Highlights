@@ -61,17 +61,17 @@ def get_articles(id):
     get_articles_url = base_url.format(id,api_key)
 
     with urllib.request.urlopen(get_articles_url) as url :
-#
-#         get_articles_data = url.read()
-#         get_articles_response = json.loads(get_articles_data)
-#
-#         articles_results = None
-#
-#         if get_news_response['top_heading'] :
-#             articles_results_list = get_articles_response['top_heading']
-#             articles_results = process_results(articles_results_list)
-#
-#     return articles_results
+
+        get_articles_data = url.read()
+        get_articles_response = json.loads(get_articles_data)
+
+        articles_results = None
+
+        if get_news_response['top_heading'] :
+            articles_results_list = get_articles_response['top_heading']
+            articles_results = process_results(articles_results_list)
+
+    return articles_results
 #
 # def process_articles(articles_list):
 #         """
