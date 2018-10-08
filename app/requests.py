@@ -22,14 +22,14 @@ def get_news(category):
     with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
         get_news_response = json.loads(get_news_data)
-#
-#         news_results = None
-#
-#         if get_news_response['sources'] :
-#             news_results_list = get_news_response['sources']
-#             news_results = process_results(news_results_list)
-#
-#     return news_results
+
+        news_results = None
+
+        if get_news_response['sources'] :
+            news_results_list = get_news_response['sources']
+    #         news_results = process_results(news_results_list)
+    #
+    # return news_results
 #
 #
 # def process_results(news_list) :
