@@ -40,27 +40,27 @@ def process_results(news_list) :
     Returns:
         news_results: list of news objects
     """
-#     news_results = []
-#     for news_item in news_list :
-#         id= news_item.get('id')
-#         name = news_item.get('name')
-#         description = news_item.get('description')
-#         url = news_item.get('url')
-#         category = news_item.get('category')
-#
-#         news_object = News(id,name,description,url,category)
-#         news_results.append(news_object)
-#
-#         print(news_list)
-#     return news_results
-#
-# def get_articles(id):
-#     """
-#     function that gets json response to our url request
-#     """
-#     get_articles_url = base_url.format(id,api_key)
-#
-#     with urllib.request.urlopen(get_articles_url) as url :
+    news_results = []
+    for news_item in news_list :
+        id= news_item.get('id')
+        name = news_item.get('name')
+        description = news_item.get('description')
+        url = news_item.get('url')
+        category = news_item.get('category')
+
+        news_object = News(id,name,description,url,category)
+        news_results.append(news_object)
+
+        print(news_list)
+    return news_results
+
+def get_articles(id):
+    """
+    function that gets json response to our url request
+    """
+    get_articles_url = base_url.format(id,api_key)
+
+    with urllib.request.urlopen(get_articles_url) as url :
 #
 #         get_articles_data = url.read()
 #         get_articles_response = json.loads(get_articles_data)
