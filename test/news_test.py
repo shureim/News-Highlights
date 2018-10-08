@@ -1,6 +1,6 @@
-# import unittest
-# from app.models import News
-#
+import unittest
+from app.models import News
+# 
 # class NewsTest(unittest.TestCase):
 #     """
 #     test class to test the behaviour of the news class
