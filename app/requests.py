@@ -72,26 +72,26 @@ def get_articles(id):
             articles_results = process_results(articles_results_list)
 
     return articles_results
-#
-# def process_articles(articles_list):
-#         """
-#         function that processes the news result and transforms them to a list of objects
-#         Args:
-#             articles_list : list of dictionaries tha contain articles details
-#         Returns:
-#             articles_results: list of articles objects
-#         """
-#         articles_results = []
-#         for articles_item in articles_list:
-#             author= articles_item.get('author')
-#             title = articles_item.get('title')
-#             description = articles_item.get('description')
-#             site = articles_item.get('urlToImage')
-#             url = articles_item.get('url')
-#             content = articles_item.get('content')
-#
-#             articles_object = Articles(author,title,description,site,url,content)
-#             articles_results.append(articles_object)
-#
-#             print(articles_list)
-#         return articles_results
+
+def process_articles(articles_list):
+        """
+        function that processes the news result and transforms them to a list of objects
+        Args:
+            articles_list : list of dictionaries tha contain articles details
+        Returns:
+            articles_results: list of articles objects
+        """
+        articles_results = []
+        for articles_item in articles_list:
+            author= articles_item.get('author')
+            title = articles_item.get('title')
+            description = articles_item.get('description')
+            site = articles_item.get('urlToImage')
+            url = articles_item.get('url')
+            content = articles_item.get('content')
+
+            articles_object = Articles(author,title,description,site,url,content)
+            articles_results.append(articles_object)
+
+            print(articles_list)
+        return articles_results
