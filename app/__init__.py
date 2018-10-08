@@ -1,4 +1,4 @@
-# from flask import Flask
+from flask import Flask
 # from config import config_options
 # from flask_bootstrap import Bootstrap
 #
@@ -21,5 +21,5 @@
 #     #setting config
 #     from .requests import configure_request
 #     configure_request(app)
-#
-#     return app
+
+    return app
