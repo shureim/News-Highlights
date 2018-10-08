@@ -5,20 +5,20 @@
         <div class="panel-heading">
           <a href="/articles/{{source.id}}" id="header">{{source.name}}</a>
         </div>
-        <!-- <div class="panel-body">
+        <div class="panel-body">
           <p class="card-text">{{source.description}}</p>
         </div>
 
         <div class="text-center">
           <a href="{{source.url}}" class="btn btn-sm btn-primary">Visit Website</a>
-        </div> -->
+        </div>
         </div>
     </div>
   {% endfor %}
 {% endmacro %}
-<!-- {% macro displayArticlesList(articles_list) %}
+{% macro displayArticlesList(articles_list) %}
   {% for article in articles_list %}
       <p> {{articles.title}} </p>
       <p>{{articles.description}}</p>
     {% endfor %}
-{% endmacro %} -->
+{% endmacro %}
