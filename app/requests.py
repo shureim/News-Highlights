@@ -13,11 +13,11 @@ def configure_request(app) :
     base_url = app.config['NEWS_API_BASE_URL']
     # article_base_url = app.config ['NEWS_API_TOP_HEADING_URL']
 
-# def get_news(category):
-#     """
-#     function that gets json response to our url request
-#     """
-#     get_news_url = base_url.format(category,api_key)
+def get_news(category):
+    """
+    function that gets json response to our url request
+    """
+    get_news_url = base_url.format(category,api_key)
 #
 #     with urllib.request.urlopen(get_news_url) as url:
 #         get_news_data = url.read()
