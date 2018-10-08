@@ -12,14 +12,14 @@ class News:
 
 
 
-# class Articles :
-#     """
-#     articles class to define articles objects
-#     """
-#     def __init__(self,author,title,description,site,url,content) :
-#         self.author = author
-#         self.title = title
-#         self.description = description
-#         self.site = site
-#         self.url = url
-#         self.content = content
+class Articles :
+    """
+    articles class to define articles objects
+    """
+    def __init__(self,author,title,description,site,url,content) :
+        self.author = author
+        self.title = title
+        self.description = description
+        self.site = site
+        self.url = url
+        self.content = content

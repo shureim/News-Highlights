@@ -13,11 +13,11 @@ def index() :
 
     title = "Now you know "
     return render_template('index.html', title = title, sources = sources)
-#
-# @main.route('/news/<int:news_id>')
-# def news(news_id) :
-#     """
-#     view news page that returns the news details page and its data
-#     """
-#     news = "first new for you"
-#     return render_template('news.html', id =news_id, news = news)
+
+@main.route('/news/<int:news_id>')
+def news(news_id) :
+    """
+    view news page that returns the news details page and its data
+    """
+    news = "first new for you"
+    return render_template('news.html', id =news_id, news = news)
