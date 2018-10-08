@@ -30,16 +30,16 @@ def get_news(category):
             news_results = process_results(news_results_list)
 
     return news_results
-#
-#
-# def process_results(news_list) :
-#     """
-#     function that processes the news result and transforms them to a list of objects
-#     Args:
-#         news_list : list of dictionaries tha contain news details
-#     Returns:
-#         news_results: list of news objects
-#     """
+
+
+def process_results(news_list) :
+    """
+    function that processes the news result and transforms them to a list of objects
+    Args:
+        news_list : list of dictionaries tha contain news details
+    Returns:
+        news_results: list of news objects
+    """
 #     news_results = []
 #     for news_item in news_list :
 #         id= news_item.get('id')
