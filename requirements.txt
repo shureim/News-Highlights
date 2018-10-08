@@ -22,7 +22,6 @@ MarkupSafe==1.0
 mccabe==0.6.1
 pycodestyle==2.4.0
 pycrypto==2.6.1
-pygobject==3.26.1
 pylint==1.9.3
 pyperclip==1.7.0
 pyxdg==0.25
