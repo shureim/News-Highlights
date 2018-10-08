@@ -18,10 +18,10 @@ def get_news(category):
     function that gets json response to our url request
     """
     get_news_url = base_url.format(category,api_key)
-#
-#     with urllib.request.urlopen(get_news_url) as url:
-#         get_news_data = url.read()
-#         get_news_response = json.loads(get_news_data)
+
+    with urllib.request.urlopen(get_news_url) as url:
+        get_news_data = url.read()
+        get_news_response = json.loads(get_news_data)
 #
 #         news_results = None
 #
