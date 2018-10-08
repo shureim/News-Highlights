@@ -11,7 +11,7 @@ def configure_request(app) :
     global api_key,base_url,article_base_url
     api_key = app.config['NEWS_API_KEY']
     base_url = app.config['NEWS_API_BASE_URL']
-    # article_base_url = app.config ['NEWS_API_TOP_HEADING_URL']
+    article_base_url = app.config ['NEWS_API_TOP_HEADING_URL']
 
 def get_news(category):
     """
