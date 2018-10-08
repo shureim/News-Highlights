@@ -27,9 +27,9 @@ def get_news(category):
 
         if get_news_response['sources'] :
             news_results_list = get_news_response['sources']
-    #         news_results = process_results(news_results_list)
-    #
-    # return news_results
+            news_results = process_results(news_results_list)
+
+    return news_results
 #
 #
 # def process_results(news_list) :
