@@ -16,10 +16,10 @@ class Articles :
     """
     articles class to define articles objects
     """
-    def __init__(self,author,title,description,site,url,content) :
+    def __init__(self,author,title,description,urlToImage,url,content) :
         self.author = author
         self.title = title
         self.description = description
-        self.site = site
+        self.urlToImage = urlToImage
         self.url = url
         self.content = content

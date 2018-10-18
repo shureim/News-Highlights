@@ -8,18 +8,11 @@
 This is an application that helps users to get news and also highlights from various news centers and also one
 can get the articles
 he/she would like to see or know more about it.   
+
 ## Setup/Installation Requirements.
 * Make sure the computer has atom .
 * Make sure your computer in connected to a browser.
 * Python has been used to form this application.
-
-
-## Behaviour Driven Development (BDD).
-|Behaviour                     |  Input                        | Output            |
-|------------------------------|-------------------------------|-------------------|
-|If a user wants to get news | select the news center he/she wants | it would display the content or news he wants|
-|If user wants to visit the site   | he/she would press the more button  | will give user more information about the
-website  which the user wants to know more about it |
 
 ## Known Bugs.
 there are no know Bugs in this web page.

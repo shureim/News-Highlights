@@ -1,9 +1,15 @@
 {% extends 'base.html' %}
 {% import 'macros.html' as macro %}
 {% block content %}
+<div class="container">
+
+  <h1 class="text-center"> News Headlines</h1>
 
   <div class="row">
-    {{macro.displayArticlesList(articles)}}
+    {{macro.displayArticlesList(articles) }}
   </div>
+</div>
+
+
 
 {% endblock%}

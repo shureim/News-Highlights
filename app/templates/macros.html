@@ -1,4 +1,4 @@
-{% macro displaySourcesList(news_list) %}
+{% macro displayNewsList(news_list) %}
   {% for source in news_list %}
     <div class="container col-xs-12 col-sm-4 col-md-3 col-lg-3">
       <div class="panel panel-default">
@@ -9,17 +9,31 @@
           <p class="card-text">{{source.description |truncate(70)}}</p>
 
         <div class="text-center">
-          <a href="{{source.url}}" class="btn btn-sm btn-primary">More Info</a>
+          <a href="/articles/{{source.id}}" class="btn btn-sm btn-primary">Articles</a>
         </div>
        </div>
         </div>
     </div>
   {% endfor %}
 {% endmacro %}
-{% macro displayArticlesList(articles_list) %}
-  {% for article in articles_list %}
-      <img src="{{article.urlToImage}}" alt="{{article.title}}">
-      <p> {{article.title}} </p>
-      <p>{{article.description | truncate(70)}}</p>
-    {% endfor %}
+
+{% macro displayArticlesList(articles) %}
+  {% for article in articles %}
+  <div class="container col-xs-12 col-sm-4 col-md-3 col-lg-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+
+        <p> {{article.title}} </p>
+      </div>
+      <div class="well" style="background-color:black;", style="color: white;">
+        <p class="card-text">{{article.description | truncate(70)}}</p>
+
+      <div class="text-center">
+        <a href="{{articles.url}}" class="btn btn-sm btn-primary">More Info</a>
+      </div>
+     </div>
+      </div>
+  </div>
+
+  {% endfor %}
 {% endmacro %}
